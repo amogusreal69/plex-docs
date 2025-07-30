@@ -3,9 +3,7 @@
   "theme": "maple",
   "name": "Plex Development",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#7b68ee"
   },
   "favicon": "/favicon.svg",
   "navigation": {
