@@ -1,46 +1,51 @@
-# plex-docs
+<!-- Header -->
+<h1 align="center">plex-docs</h1>
+<p align="center">
+  an unofficial documentation for plex development product or smth IDK
+  <br/><br/>
+  <a href="https://plex.amogusreal.tech">Website</a> <b>·</b>
+  <a href="https://github.com/blueprinter-zip/plex-docs/issues">Issues</a> <b>·</b>
+  <a href="https://github.com/blueprinter-zip/plex-docs/blob/main/LICENSE">License</a>
+</p>
 
-# Mintlify Starter Kit
 
-Use the starter kit to get your docs deployed and ready to customize.
 
-Click the green **Use this template** button at the top of this repo to copy the Mintlify starter kit. The starter kit contains examples with
+<!-- Introduction -->
+<br/><h2 align="center">🧩 Introduction</h2>
 
-- Guide pages
-- Navigation
-- Customizations
-- API reference pages
-- Use of popular components
+**plex-docs** was meant to replace the current [Plex Development documentation](https://docs.plexdevelopment.net/) unofficially (because their pricing sucks, same thing for Mintlify), and I needed to change some stuff which I couldn't (thanks to GitBook, I don't know if they even support Git Collaborators). I don't know what to say next.
 
-**[Follow the full quickstart guide](https://starter.mintlify.com/quickstart)**
+<!-- Showcase -->
+<br/><h2 align="center">📷 Showcase</h2>
 
-## Development
+There's no need for one. Unless if you need it:
+![alt text](showcase.png)
 
-Install the [Mintlify CLI](https://www.npmjs.com/package/mint) to preview your documentation changes locally. To install, use the following command:
 
-```
-npm i -g mint
-```
+<!-- Contributors -->
+<br/><h2 align="center">👥 Contributors</h2>
 
-Run the following command at the root of your documentation, where your `docs.json` is located:
+<a href="https://github.com/blueprinter-zip/plex-docs/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=blueprinter-zip/plex-docs" />
+</a>
 
-```
-mint dev
-```
+<!-- Stargazers -->
+<br/><h2 align="center">🌟 Stargazers</h2>
 
-View your local preview at `http://localhost:3000`.
+<a href="https://github.com/blueprinter-zip/plex-docs/stargazers/">
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="http://reporoster.com/stars/blueprinter-zip/plex-docs">
+    <img alt="stargazer-widget" src="http://reporoster.com/stars/dark/blueprinter-zip/plex-docs">
+  </picture>
+</a>
 
-## Publishing changes
+<!-- Related Links -->
+<br/><h2 align="center">🔗 Related Links</h2>
 
-Install our GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app) to propagate changes from your repo to your deployment. Changes are deployed to production automatically after pushing to the default branch.
+[**Mintlify**](https://mintlify.com) is the documentation software this project currently uses.\
+[**Plex Development**](https://plexdevelopment.net/) is... well the people behind the products behind Plex Tickets, etc, idk why am i still explaining this
 
-## Need help?
+<!-- License -->
+<br/><h2 align="center">📝 License</h2>
 
-### Troubleshooting
-
-- If your dev environment isn't running: Run `mint update` to ensure you have the most recent version of the CLI.
-- If a page loads as a 404: Make sure you are running in a folder with a valid `docs.json`.
-
-### Resources
-- [Mintlify documentation](https://mintlify.com/docs)
-- [Mintlify community](https://mintlify.com/community)
+Copyright © 2025 [amogusreal69](https://github.com/amogusreal69). This project is [MIT](https://github.com/blueprinter-zip/plex-docs/blob/main/LICENSE) licensed.
