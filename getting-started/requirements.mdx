@@ -55,11 +55,50 @@ The following steps will depend on which operating system you are using. Please 
     </Steps>
   </Tab>
   <Tab title="Linux Dependencies" icon="terminal">
+
+    *copied from the official docs, slightly modified*
+
     In order to run Plex Development products on Linux, you will need to install the following dependencies:
 
     <Steps>
       <Step title="Install Node.js LTS">
-        aaa
+        This steps depends on your Linux distribution. Please select the appropriate section below:
+        <Tabs>
+          <Tab title="Debian/Ubuntu" icon="computer">
+            Open a terminal, either via SSH or directly on the server, and run the following commands to install the requires packages and the latest LTS version of Node.js:
+            ```bash
+            # Install required build tools
+            sudo apt-get install -y autoconf automake g++ libtool build-essential
+
+            # Add NodeSource repository for the latest Node.js
+            curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
+
+            # Install Node.js
+            sudo apt-get install -y nodejs
+            ```
+          </Tab>
+          <Tab title="CentOS/RHEL" icon="computer">
+            Open a terminal, either via SSH or directly on the server, and run the following commands to install the requires packages and the latest LTS version of Node.js:
+            ```bash
+            # Install Development Tools group for CentOS
+            sudo yum groupinstall -y "Development Tools"
+
+            # Add NodeSource repository for the latest Node.js
+            curl -fsSL https://rpm.nodesource.com/setup_22.x | sudo bash -
+
+            # Install Node.js
+            sudo yum install -y nodejs
+            ```
+          </Tab>
+        </Tabs>
+      </Step>
+      <Step title="Verify Installation">
+        After installing Node.js, you can verify the installation by running the following commands in your terminal:
+        ```bash
+        node -v
+        npm -v
+        ```
+        If both commands return version numbers, the installation was successful.
       </Step>
     </Steps>
   </Tab>
