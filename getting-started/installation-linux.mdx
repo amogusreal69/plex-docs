@@ -8,12 +8,59 @@ Follow these steps to install and run the bot on your Linux server:
 
 <Tabs>
   <Tab title="Manual Install" icon="wrench">
-    <video src="https://github.com/blueprinter-zip/plex-docs/blob/main/assets/videos/LinuxSetup.mp4?raw=true" autoplay loop muted controls></video>
     ## ⚠️ Before continuing!
     This guide expects you to have installed the dependencies listed here:
     <Card title="Requirements" icon="clipboard-list" href="/getting-started/requirements" horizontal>
       Essential dependencies and system requirements needed to run Plex Development products on your operating system.
     </Card>
+    If you do not have the required dependencies, you may experience errors during the process. It is recommended to install them before following this guide. Thanks!
+
+    <Tabs>
+      <Tab title="Text install" icon="text-align-start">
+        Follow these steps to install and run the bot on your Linux server:
+        <Steps>
+          <Step title="Log in to your server">
+            Log in to your VPS using your preferred SSH client or terminal software (e.g., PuTTY, MobaXterm, or any similar tool).
+          </Step>
+          <Step title="Place Bot Files on the Server">
+            Ensure the bot files are uploaded to a directory of your choice on the server. You can do this with a SFTP client (e.g., FileZilla, WinSCP, or any similar tool).
+          </Step>
+          <Step title="Navigate to the Bot Directory">
+            Open a terminal on the server and navigate to the folder containing your bot files using the cd command:
+            ```bash
+            cd /path/to/your-bot-directory
+            ```
+          </Step>
+          <Step title="Modify the config file">
+            On the current directory, modify the config.yml file using a text editor such as nano:
+            ```bash
+            nano config.yml
+            ```
+            To save the file, press Control+X, Y and Enter. You should now be redirected back to the terminal.
+          </Step>
+          <Step title="Install Node.js Modules">
+            Install the Node.js modules required for the bot by running:
+            ```bash
+            npm install
+            ```
+            This will install all necessary dependencies as listed in the `package.json` file, which allows the bot to start up.
+          </Step>
+          <Step title="Start the Bot">
+            After completing the config file and installed the Node.js modules required for the bot, run the bot with the following command:
+            ```bash
+            node index.js
+            ```
+            Check the terminal output to ensure the bot starts without errors.
+          </Step>
+        </Steps>
+        <Check>...and you're done! By following this guide, your bot should be up and running in no time. For additional help, feel free to reach out to [Plex Development's support team on Discord](https://discord.gg/plexdev).</Check>
+        <Info>By default, the bot runs in your current terminal session. By closing your terminal session, the bot will no longer be up and running. To keep the bot running continuously, you can use the `screen` command or the `tmux` command. [Click here for a detailed guide on using `screen` or `tmux`.](https://docs.plexdevelopment.net/frequently-asked-questions/keep-your-node.js-application-running-24-7)</Info>
+      </Tab>
+      <Tab title="Video install" icon="video">
+        This video was made thanks to [**Bali0531**](https://plexdev.live/)!
+        <video src="/assets/videos/LinuxSetup.mp4" autoplay loop muted controls></video>
+      </Tab>
+    </Tabs>
   </Tab>
   <Tab title="Auto Install (UNOFFICIAL)" icon="bot">
     <Warning>PlexDev.live is an unofficial tool by [**Bali0531**](https://plexdev.live/), where it is not affiliated with this documentation or Plex Development. Please review the code before executing any commands.</Warning>
