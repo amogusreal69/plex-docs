@@ -20,7 +20,7 @@ Follow these steps to install and run the bot on your Linux server:
       <Tab title="Text install" icon="text-align-start">
         Follow these steps to install and run the bot on your Linux server:
         <Steps>
-          <Step title="Download the Bot">
+          <Step title="Download the Bot" titleSize="h3">
             Download the bot's ZIP file from the marketplace you have bought the bot. The only marketplace's you should trust are listed below:
             <Columns cols={2}>
               <Card title="Our website" icon="link" href="https://plexdevelopment.net" arrow="true">
@@ -30,33 +30,33 @@ Follow these steps to install and run the bot on your Linux server:
             </Columns>
             <Warning>If you have bought our product from another marketplace other than the listed above, you may have been scammed and should immediately ask for a refund. (this does not apply to Plex Tickets bought in CodeFling, in which case you must create a ticket to transfer your license)</Warning>
           </Step>
-          <Step title="Log in to your server">
+          <Step title="Log in to your server" titleSize="h3">
             Log in to your VPS using your preferred SSH client or terminal software (e.g., PuTTY, MobaXterm, or any similar tool).
           </Step>
-          <Step title="Place Bot Files on the Server">
+          <Step title="Place Bot Files on the Server" titleSize="h3">
             Ensure the bot files are uploaded to a directory of your choice on the server. You can do this with a SFTP client (e.g., FileZilla, WinSCP, or any similar tool).
           </Step>
-          <Step title="Navigate to the Bot Directory">
+          <Step title="Navigate to the Bot Directory" titleSize="h3">
             On the server and navigate to the folder containing your bot files using the `cd` command:
             ```bash
             cd /path/to/your-bot-directory
             ```
           </Step>
-          <Step title="Modify the config file">
+          <Step title="Modify the config file" titleSize="h3">
             On the current directory, modify the config.yml file using a text editor such as nano:
             ```bash
             nano config.yml
             ```
             To save the file, press Control+X, Y and Enter. You should now be redirected back to the terminal.
           </Step>
-          <Step title="Install Node.js Modules">
+          <Step title="Install Node.js Modules" titleSize="h3">
             Install the Node.js modules required for the bot by running:
             ```bash
             npm install
             ```
             This will install all necessary dependencies as listed in the `package.json` file, which allows the bot to start up.
           </Step>
-          <Step title="Start the Bot">
+          <Step title="Start the Bot" titleSize="h3">
             After completing the config file and installed the Node.js modules required for the bot, run the bot with the following command:
             ```bash
             node index.js

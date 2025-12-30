@@ -28,23 +28,21 @@ The following steps will depend on which operating system you are using. Please 
     Installing dependencies on Windows is generally not recommended, due to how closed the system is. We recommend using a Linux-based system for better compatibility and performance, or using WSL (Windows Subsystem for Linux) to run a Linux environment on Windows.
     </Warning>
 
-    *copied from the official docs, slightly modified*
-
     In order to run Plex Development products on Windows, you will need to install the following dependencies:
     <Steps>
-      <Step title="Install Visual Studio Desktop Development C++">
+      <Step title="Install Visual Studio Desktop Development C++" titleSize="h3">
         This step is required to compile native modules used by some NPM packages we use. You can use this [link](https://github.com/nodejs/node-gyp/blob/91eb407f8418235d51c72b6a8df9c454ba882554/README.md#on-windows) to install the required components.
       </Step>
-      <Step title="Install Node.js LTS">
+      <Step title="Install Node.js LTS" titleSize="h3">
         Download and install the latest Long-Term Support (LTS) version of Node.js directly from the [official Node.js website](https://nodejs.org/en/).
       </Step>
-      <Step title="Install Build Tools">
+      <Step title="Install Build Tools" titleSize="h3">
         This step is required to compile native modules used by some NPM packages we use. Open an administrative Command Prompt and run the following command to install the necessary build tools:
         ```cmd
         npm install --global --production --vs2018 --add-python-to-path windows-build-tools
         ```
       </Step>
-      <Step title="Verify Installation">
+      <Step title="Verify Installation" titleSize="h3">
         Open a new Command Prompt and run the following commands to verify that Node.js and NPM are installed correctly:
         ```cmd
         node -v
@@ -55,13 +53,10 @@ The following steps will depend on which operating system you are using. Please 
     </Steps>
   </Tab>
   <Tab title="Linux Dependencies" icon="terminal">
-
-    *copied from the official docs, slightly modified*
-
     In order to run Plex Development products on Linux, you will need to install the following dependencies:
 
     <Steps>
-      <Step title="Install Node.js LTS">
+      <Step title="Install Node.js LTS" titleSize="h3">
         This steps depends on your Linux distribution. Please select the appropriate section below:
         <Tabs>
           <Tab title="Debian/Ubuntu" icon="computer">
@@ -92,7 +87,7 @@ The following steps will depend on which operating system you are using. Please 
           </Tab>
         </Tabs>
       </Step>
-      <Step title="Verify Installation">
+      <Step title="Verify Installation" titleSize="h3">
         After installing Node.js, you can verify the installation by running the following commands in your terminal:
         ```bash
         node -v
