@@ -1,7 +1,8 @@
 ---
 title: "Installation Guide for Linux"
+sidebarTitle: "Linux"
 description: "Step-by-step instructions for installing Plex Development products on Linux."
-icon: "download"
+icon: "linux"
 ---
 
 Follow these steps to install and run the bot on your Linux server:
@@ -19,6 +20,16 @@ Follow these steps to install and run the bot on your Linux server:
       <Tab title="Text install" icon="text-align-start">
         Follow these steps to install and run the bot on your Linux server:
         <Steps>
+          <Step title="Download the Bot">
+            Download the bot's ZIP file from the marketplace you have bought the bot. The only marketplace's you should trust are listed below:
+            <Columns cols={2}>
+              <Card title="Our website" icon="link" href="https://plexdevelopment.net" arrow="true">
+              </Card>
+              <Card title="BuiltByBit" icon="box" href="https://builtbybit.com/creators/swqpping.156689/" arrow="true">
+              </Card>
+            </Columns>
+            <Warning>If you have bought our product from another marketplace other than the listed above, you may have been scammed and should immediately ask for a refund. (this does not apply to Plex Tickets bought in CodeFling, in which case you must create a ticket to transfer your license)</Warning>
+          </Step>
           <Step title="Log in to your server">
             Log in to your VPS using your preferred SSH client or terminal software (e.g., PuTTY, MobaXterm, or any similar tool).
           </Step>
@@ -26,7 +37,7 @@ Follow these steps to install and run the bot on your Linux server:
             Ensure the bot files are uploaded to a directory of your choice on the server. You can do this with a SFTP client (e.g., FileZilla, WinSCP, or any similar tool).
           </Step>
           <Step title="Navigate to the Bot Directory">
-            Open a terminal on the server and navigate to the folder containing your bot files using the cd command:
+            On the server and navigate to the folder containing your bot files using the `cd` command:
             ```bash
             cd /path/to/your-bot-directory
             ```

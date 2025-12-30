@@ -1,0 +1,61 @@
+---
+title: "Installation Guide for Windows"
+sidebarTitle: "Windows"
+description: "Step-by-step instructions for installing Plex Development products on Windows."
+icon: "windows"
+---
+
+<Warning>
+Installing our products on Windows is generally not recommended, due to how closed the system is. We recommend using a Linux-based system for better compatibility and performance, or using WSL (Windows Subsystem for Linux) to run a Linux environment on Windows.
+</Warning>
+
+## ⚠️ Before continuing!
+This guide expects you to have installed the dependencies listed here:
+<Card title="Requirements" icon="clipboard-list" href="/getting-started/requirements#windows-dependencies" horizontal>
+    Essential dependencies and system requirements needed to run Plex Development products on your operating system.
+</Card>
+If you do not have the required dependencies, you may experience errors during the process. It is recommended to install them before following this guide. Thanks!
+
+## 📥 Installation
+
+Follow these steps to install and run the bot on your Windows systemm:
+<Steps>
+    <Step title="Download the Bot">
+        Download the bot's ZIP file from the marketplace you have bought the bot. The only marketplace's you should trust are listed below:
+        <Columns cols={2}>
+            <Card title="Our website" icon="link" href="https://plexdevelopment.net" arrow="true">
+            </Card>
+            <Card title="BuiltByBit" icon="box" href="https://builtbybit.com/creators/swqpping.156689/" arrow="true">
+            </Card>
+        </Columns>
+        <Warning>If you have bought our product from another marketplace other than the listed above, you may have been scammed and should immediately ask for a refund. (this does not apply to Plex Tickets bought in CodeFling, in which case you must create a ticket to transfer your license)</Warning>
+    </Step>
+    <Step title="Unzip the Bot">
+        Unzip the file into a folder of your choice. Ensure the folder is in an accessible location, such as `C:\Bots\YourBotName`.
+    </Step>
+    <Step title="Open Command Prompt">
+        Open the Command Prompt by searching for **"cmd"** in the Start menu and clicking on it. Then, navigate to your bot's directory using the `cd` command. For example:
+        ```cmd
+        cd C:\Bots\YourBotName
+        ```
+    </Step>
+    <Step title="Modify the config file">
+        Open the `config.yml` file in a text editor such as **Visual Studio Code** or **Notepad++**, and configure the bot from there.
+        Once all changes have been made, save the file and close your text editor.
+    </Step>
+    <Step title="Install Node.js Modules">
+        Install the Node.js modules required for the bot by running:
+        ```cmd
+        npm install
+        ```
+        This will install all necessary dependencies as listed in the `package.json` file, which allows the bot to start up.
+    </Step>
+    <Step title="Start the Bot">
+        After completing the config file and installed the Node.js modules required for the bot, run the bot with the following command:
+        ```cmd
+        node index.js
+        ```
+        Check the terminal output to ensure the bot starts without errors.
+    </Step>
+</Steps>
+<Check>...and you're done! By following this guide, your bot should be up and running in no time. For additional help, feel free to reach out to [Plex Development's support team on Discord](https://discord.gg/plexdev).</Check>

@@ -59,11 +59,19 @@
               "index"
             ]
           },
-                    {
+          {
             "group": "Getting Started",
             "pages": [
               "getting-started/requirements",
-              "getting-started/installation"
+              {
+                "group": "Installation",
+                "icon": "download",
+                "pages": [
+                  "getting-started/installation/windows",
+                  "getting-started/installation/linux",
+                  "getting-started/installation/bot"
+                ]
+              }
             ]
           }
         ]
